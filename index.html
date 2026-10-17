@@ -1,0 +1,1089 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>ҮХХ Зөвлөх</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..800&family=JetBrains+Mono:wght@400..700&family=Literata:opsz,wght@7..72,400..800&display=swap">
+<style>
+/* Layout: a 16:9 security-document stage that turns like a cube in 3D, with paper, ink and stamp colours; phones get a stacked reading mode */
+:root{
+  --void:#070B1C; --ink:#0E1633; --paper:#F2EEE3; --card:#FAF8F2; --rule:#D9D2C1; --qr:#FBFAF6;
+  --blue:#2346D8; --blue-l:#8FA6FF; --orange:#B5410C; --orange-l:#FF8A4C;
+  --soft:#4A4F5E; --muted:#5F6370; --soft-d:#B8C1DA; --muted-d:#8E98B5;
+  --tint-b:#E6EBFB; --tint-o:#FBE9DF; --tabs:#ECE7DA; --ring:#C9C3B3; --white:#FFFFFF; --black:#000000;
+  --f-display:'Literata', Georgia, 'Times New Roman', serif;
+  --f-body:'Golos Text', 'Segoe UI', Roboto, 'Noto Sans', Arial, sans-serif;
+  --f-mono:'JetBrains Mono', ui-monospace, Menlo, Consolas, 'Courier New', monospace;
+  --u:min(calc((100vw - 32px) / 1920), calc((100vh - 24px) / 1080));
+  --s1:calc(var(--u) * 140); --s2:calc(var(--u) * 72); --s3:calc(var(--u) * 44); --s4:calc(var(--u) * 32); --s5:calc(var(--u) * 24);
+  --pad:calc(var(--u) * 128);
+  color-scheme:dark;
+}
+html,body{height:100%}
+body{margin:0;background:var(--void);color:var(--paper);font-family:var(--f-body);overflow:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+*,*::before,*::after{box-sizing:border-box}
+p,h1,h2,ol{margin:0;padding:0}
+button{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue-l);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.i{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* stage */
+.viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:12px;perspective:calc(var(--u) * 2600);overflow:hidden}
+.tilt{position:relative;flex:none;width:calc(var(--u) * 1920);height:calc(var(--u) * 1080);transform-style:preserve-3d}
+.stage{position:absolute;inset:0;transform-style:preserve-3d}
+.slide{position:absolute;left:0;top:0;width:calc(var(--u) * 1920);height:calc(var(--u) * 1080);padding:var(--pad) var(--pad) calc(var(--u) * 160);display:flex;flex-direction:column;background:var(--paper);color:var(--ink);backface-visibility:hidden;-webkit-backface-visibility:hidden;transform-style:preserve-3d;visibility:hidden;box-shadow:0 calc(var(--u) * 40) calc(var(--u) * 120) rgba(0,0,0,.45)}
+.slide.on{visibility:visible}
+.slide.dark{background:var(--ink);color:var(--paper)}
+.slide.blue{background:var(--blue);color:var(--paper)}
+.shade{position:absolute;inset:0;background:var(--black);opacity:0;pointer-events:none}
+.foot{position:absolute;left:var(--pad);right:var(--pad);bottom:calc(var(--u) * 64);display:flex;justify-content:space-between;font:500 var(--s5)/1.2 var(--f-mono);letter-spacing:calc(var(--u) * 3);color:var(--muted)}
+.dark .foot{color:var(--muted-d)}
+.blue .foot{color:var(--paper)}
+.t{font:700 var(--s2)/1.1 var(--f-display);letter-spacing:calc(var(--u) * -1);text-wrap:balance}
+.head{display:flex;flex-direction:column;gap:calc(var(--u) * 12)}
+.lead{font:400 var(--s4)/1.35 var(--f-body);color:var(--soft)}
+.hint{font:500 var(--s5)/1.3 var(--f-mono);letter-spacing:calc(var(--u) * 1);color:var(--muted)}
+.eyebrow{font:500 var(--s5)/1.3 var(--f-mono);letter-spacing:calc(var(--u) * 4);text-transform:uppercase}
+.src{font:500 var(--s5)/1.3 var(--f-mono);color:var(--muted)}
+.spacer{flex:1}
+.c-bl{color:var(--blue-l)} .c-b{color:var(--blue)} .c-m{color:var(--muted)} .c-ol{color:var(--orange-l)}
+
+/* 1 cover */
+.s-cover{justify-content:space-between}
+.guilloche{position:absolute;top:0;height:100%;pointer-events:none}
+.s-cover .guilloche{left:calc(var(--u) * 600);width:calc(var(--u) * 1320)}
+.s-next .guilloche{left:calc(var(--u) * 960);width:calc(var(--u) * 960)}
+.cover-doc{position:absolute;left:calc(var(--u) * 900);top:calc(var(--u) * 620);width:calc(var(--u) * 880);transform-style:preserve-3d}
+.doc{position:relative;cursor:pointer}
+.doc img{display:block;width:100%;height:auto;filter:drop-shadow(0 calc(var(--u) * 30) calc(var(--u) * 40) rgba(0,0,0,.45))}
+.stamp{position:absolute;left:calc(var(--u) * 220);top:calc(var(--u) * 82);width:calc(var(--u) * 440);display:flex;align-items:center;gap:calc(var(--u) * 12);padding:calc(var(--u) * 16) calc(var(--u) * 28);border:calc(var(--u) * 6) double var(--blue);border-radius:calc(var(--u) * 18);color:var(--blue);transform:rotate(-8deg)}
+.stamp svg{flex:none;width:calc(var(--u) * 60);height:calc(var(--u) * 60);stroke-width:2.6}
+.stamp b{display:block;font:800 var(--s3)/1 var(--f-body);letter-spacing:calc(var(--u) * 4)}
+.stamp span{display:block;font:500 var(--s5)/1.2 var(--f-mono);letter-spacing:calc(var(--u) * 2)}
+.stamp-t{display:flex;flex-direction:column;gap:calc(var(--u) * 6)}
+.cover-text{position:relative;display:flex;flex-direction:column;gap:calc(var(--u) * 28)}
+.cover-title{font:800 var(--s1)/1.05 var(--f-display);letter-spacing:calc(var(--u) * -2);white-space:nowrap}
+.cover-lines{display:flex;flex-direction:column;gap:calc(var(--u) * 12)}
+.cover-tag{font:600 var(--s3)/1.25 var(--f-body)}
+.cover-sub{font:400 var(--s4)/1.35 var(--f-body);color:var(--soft-d)}
+.cover-qr{position:relative;display:flex;align-items:center;gap:calc(var(--u) * 28)}
+.qr{display:block;flex:none;background:var(--qr);border-radius:calc(var(--u) * 16);padding:calc(var(--u) * 14);line-height:0;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.qr:hover{transform:scale(1.06)}
+.qr img{display:block;width:calc(var(--u) * 168);height:calc(var(--u) * 168)}
+.qr-l{font:600 var(--s4)/1.3 var(--f-body)}
+.qr-t{display:flex;flex-direction:column;gap:calc(var(--u) * 6)}
+
+/* 2 fraud */
+.s-fraud{gap:calc(var(--u) * 48)}
+.stats{display:flex;gap:calc(var(--u) * 64)}
+.stats > .stat{width:calc(var(--u) * 520);flex:none}
+.stats-r{flex:1;min-width:0;display:flex;flex-direction:column;gap:calc(var(--u) * 32);border-left:calc(var(--u) * 2) solid var(--rule);padding-left:calc(var(--u) * 64)}
+.pair{display:flex;gap:calc(var(--u) * 64)}
+.pair .stat{flex:1;min-width:0}
+.stat{display:flex;flex-direction:column;gap:calc(var(--u) * 12)}
+.stat.hov{cursor:pointer;border-radius:calc(var(--u) * 16);transition:background-color .25s}
+.stat.hov:hover{background:rgba(181,65,12,.06)}
+.num{font:700 var(--s1)/1 var(--f-display);letter-spacing:calc(var(--u) * -3);font-variant-numeric:tabular-nums}
+.num.o{color:var(--orange)}
+.cap{font:400 var(--s4)/1.35 var(--f-body);color:var(--soft)}
+.waffle-w{display:flex;flex-direction:column;gap:calc(var(--u) * 12)}
+.waffle{display:grid;grid-template-rows:repeat(2, calc(var(--u) * 26));grid-auto-flow:column;grid-auto-columns:calc(var(--u) * 26);gap:calc(var(--u) * 7)}
+.waffle i{display:block;border-radius:calc(var(--u) * 5);border:calc(var(--u) * 3) solid rgba(14,22,51,.38);transition:transform .25s,opacity .25s}
+.waffle i.on{background:var(--orange);border-color:var(--orange)}
+.waffle.dim i{opacity:.25}
+.waffle.hl-all i,.waffle.hl-on i.on{opacity:1;transform:scale(1.14)}
+.notice{display:flex;align-items:center;gap:calc(var(--u) * 28);background:var(--card);border:calc(var(--u) * 2) dashed var(--orange);border-radius:calc(var(--u) * 20);padding:calc(var(--u) * 24) calc(var(--u) * 32)}
+.pill{flex:none;font:700 var(--s5)/1.3 var(--f-mono);letter-spacing:calc(var(--u) * 2);text-transform:uppercase;white-space:nowrap;color:var(--card);background:var(--orange);border-radius:calc(var(--u) * 10);padding:calc(var(--u) * 6) calc(var(--u) * 14)}
+.notice p{flex:1;min-width:0;font:500 var(--s4)/1.35 var(--f-body)}
+.notice .src{flex:none;white-space:nowrap}
+
+/* 3 risks */
+.s-risks{gap:calc(var(--u) * 40)}
+.w920{width:calc(var(--u) * 920)}
+.risk-ordr{position:absolute;left:calc(var(--u) * 1100);top:calc(var(--u) * 128);width:calc(var(--u) * 692)}
+.risk-ordr img,.risk-phone img{display:block;width:100%;height:auto}
+.risk-phone{position:absolute;left:calc(var(--u) * 1060);top:calc(var(--u) * 600);width:calc(var(--u) * 440)}
+.risk-phone img{filter:drop-shadow(0 calc(var(--u) * 24) calc(var(--u) * 32) rgba(14,22,51,.28))}
+.flips{display:flex;flex-direction:column;gap:calc(var(--u) * 20)}
+.flip{display:block;width:100%;padding:0;border:0;background:none;text-align:left;cursor:pointer;perspective:calc(var(--u) * 1800);color:inherit}
+.flip-in{display:grid;transform-style:preserve-3d;transition:transform .75s cubic-bezier(.3,1.25,.5,1)}
+.flip.is-on .flip-in{transform:rotateX(180deg)}
+.ff,.fb{grid-area:1 / 1;display:flex;align-items:center;gap:calc(var(--u) * 20);padding:calc(var(--u) * 24) calc(var(--u) * 28);border-radius:calc(var(--u) * 20);backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.ff{background:var(--card);border:1px solid var(--rule);transition:border-color .2s}
+.fb{background:var(--blue);color:var(--paper);transform:rotateX(180deg)}
+.flip:hover .ff{border-color:var(--orange)}
+.rn{flex:none;width:calc(var(--u) * 56);font:700 var(--s5)/1 var(--f-mono);letter-spacing:calc(var(--u) * 2);color:var(--orange)}
+.fb .rn{color:var(--paper)}
+.ft{flex:1;display:flex;flex-direction:column;gap:calc(var(--u) * 6);min-width:0}
+.ft b{font:600 var(--s3)/1.2 var(--f-body)}
+.ff .ft span{font:400 var(--s4)/1.35 var(--f-body);color:var(--soft)}
+.fb .ft span{font:500 var(--s4)/1.35 var(--f-body)}
+.fb .ft b{font:500 var(--s5)/1.3 var(--f-mono);letter-spacing:calc(var(--u) * 2);text-transform:uppercase}
+.turn{flex:none;width:calc(var(--u) * 40);height:calc(var(--u) * 40);color:var(--muted)}
+.fb .turn{color:var(--paper)}
+
+/* 4 vision */
+.s-vision{gap:calc(var(--u) * 24)}
+.tiles{display:flex;gap:calc(var(--u) * 24);transform-style:preserve-3d}
+.tile{flex:1;min-width:0;display:flex;flex-direction:column;gap:calc(var(--u) * 16);padding:calc(var(--u) * 32);border-radius:calc(var(--u) * 20);border:calc(var(--u) * 2) solid rgba(242,238,227,.45);background:transparent;color:var(--paper);text-align:left;cursor:pointer;transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s}
+.tile.now{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.tile.soon{background:rgba(242,238,227,.12)}
+.tile.is-sel{transform:translateY(calc(var(--u) * -12));box-shadow:0 0 0 calc(var(--u) * 4) var(--paper), 0 calc(var(--u) * 30) calc(var(--u) * 60) rgba(5,10,40,.3)}
+.tile:not(.is-sel):hover,.cardx:hover,.mcard:hover{transform:translateZ(calc(var(--u) * 40)) rotateX(6deg);box-shadow:0 calc(var(--u) * 30) calc(var(--u) * 60) rgba(5,10,40,.28)}
+.tile-h{display:flex;align-items:center;gap:calc(var(--u) * 14)}
+.tn{font:700 var(--s2)/1 var(--f-display)}
+.tile svg{flex:none;width:calc(var(--u) * 56);height:calc(var(--u) * 56)}
+.when{margin-left:auto;font:600 var(--s5)/1 var(--f-mono);letter-spacing:calc(var(--u) * 2);text-transform:uppercase;padding:calc(var(--u) * 7) calc(var(--u) * 12);border-radius:999px;border:calc(var(--u) * 2) solid currentColor;white-space:nowrap}
+.tile.now .tn,.tile.now .tl,.tile.now svg,.tile.now .when{color:var(--blue)}
+.tl{font:500 var(--s5)/1.3 var(--f-mono);letter-spacing:calc(var(--u) * 2);text-transform:uppercase}
+.tt{font:600 var(--s4)/1.3 var(--f-body)}
+.vdetail{display:flex;flex-direction:column;gap:calc(var(--u) * 8);background:rgba(14,22,51,.22);border-radius:calc(var(--u) * 16);padding:calc(var(--u) * 22) calc(var(--u) * 32)}
+.vdetail p:last-child{font:500 var(--s4)/1.35 var(--f-body)}
+
+/* 5 check */
+.s-check{gap:calc(var(--u) * 48)}
+.w1192{width:calc(var(--u) * 1192)}
+.proto-l{position:absolute;left:calc(var(--u) * 1392);top:calc(var(--u) * 128);width:calc(var(--u) * 400);text-align:center;font:500 var(--s5)/1.3 var(--f-mono);text-transform:uppercase;color:var(--muted)}
+.phone-wrap{position:absolute;left:calc(var(--u) * 1392);top:calc(var(--u) * 176);width:calc(var(--u) * 400);height:calc(var(--u) * 744);transform-style:flat;perspective:calc(var(--u) * 1600)}
+.phone{position:absolute;inset:0;border-radius:calc(var(--u) * 60);background:var(--ink);padding:calc(var(--u) * 12);transform:rotateY(14deg) rotateX(2deg);box-shadow:calc(var(--u) * 34) calc(var(--u) * 40) calc(var(--u) * 80) rgba(14,22,51,.30)}
+.screen{position:relative;height:100%;border-radius:calc(var(--u) * 48);background:var(--card);overflow:hidden;padding:calc(var(--u) * 54) calc(var(--u) * 22) calc(var(--u) * 22);display:flex;flex-direction:column;gap:calc(var(--u) * 14);color:var(--ink)}
+.notch{position:absolute;top:calc(var(--u) * 14);left:50%;width:calc(var(--u) * 118);height:calc(var(--u) * 30);margin-left:calc(var(--u) * -59);border-radius:calc(var(--u) * 15);background:var(--ink)}
+.tabs{display:flex;gap:calc(var(--u) * 6);background:var(--tabs);border-radius:calc(var(--u) * 16);padding:calc(var(--u) * 5)}
+.tab{flex:1;min-width:0;border:0;background:transparent;border-radius:calc(var(--u) * 12);padding:calc(var(--u) * 8) calc(var(--u) * 6);font:600 var(--s5)/1.25 var(--f-body);color:var(--soft);cursor:pointer;transition:background-color .25s,color .25s}
+.tab:hover{color:var(--ink)}
+.tab.is-on{background:var(--ink);color:var(--paper)}
+.ls{display:flex;align-items:center;justify-content:space-between;gap:calc(var(--u) * 10);background:var(--white);border:1px solid var(--rule);border-radius:calc(var(--u) * 22);padding:calc(var(--u) * 14) calc(var(--u) * 14) calc(var(--u) * 14) calc(var(--u) * 18)}
+.ls b,.tx b{display:block;font:700 var(--s5)/1.25 var(--f-body)}
+.ls span,.tx > span{display:block;font:400 var(--s5)/1.25 var(--f-body);color:var(--muted)}
+.ph-go{flex:none;border:0;border-radius:999px;background:var(--blue);color:var(--card);font:700 var(--s5)/1 var(--f-body);padding:calc(var(--u) * 12) calc(var(--u) * 16);cursor:pointer;transition:background-color .2s, transform .15s}
+.ph-go:hover{background:var(--ink)}
+.ph-go:active{transform:scale(.94)}
+.tx{flex:1;min-width:0}
+.acct{display:flex;align-items:baseline;gap:calc(var(--u) * 6);font:400 var(--s5)/1.25 var(--f-body);color:var(--muted)}
+.acct input{flex:1;min-width:0;width:calc(var(--u) * 150);font:600 var(--s5)/1.25 var(--f-body);color:var(--ink);background:transparent;border:0;border-bottom:calc(var(--u) * 2) dashed var(--blue);border-radius:0;padding:0;outline:none}
+.acct input:focus{border-bottom-style:solid;background:var(--tint-b)}
+.acct.bad input{color:var(--orange);border-bottom-color:var(--orange)}
+.rw{display:flex;gap:calc(var(--u) * 12);align-items:flex-start;padding:calc(var(--u) * 8) calc(var(--u) * 6);border-radius:calc(var(--u) * 14);opacity:.35;transition:opacity .35s, background-color .25s}
+.rw.on,.rw.ok,.rw.no,.rw.hl{opacity:1}
+.rw.hl{background:rgba(35,70,216,.10)}
+.ic{flex:none;position:relative;width:calc(var(--u) * 36);height:calc(var(--u) * 36);border-radius:50%;border:calc(var(--u) * 3) solid var(--ring);margin-top:calc(var(--u) * -2);transition:background-color .3s,border-color .3s}
+.rw.on .ic{border-color:var(--blue);border-right-color:transparent;animation:spin .7s linear infinite}
+.rw.ok .ic{background:var(--blue);border-color:var(--blue)}
+.rw.no .ic{background:var(--orange);border-color:var(--orange)}
+.ic svg{position:absolute;inset:0;margin:auto;width:calc(var(--u) * 22);height:calc(var(--u) * 22);color:var(--card);stroke-width:3;opacity:0;transform:scale(.3);transition:opacity .25s,transform .3s}
+.rw.ok .ic .y,.rw.no .ic .n{opacity:1;transform:none}
+.rs{margin-top:auto;border-radius:calc(var(--u) * 22);padding:calc(var(--u) * 16) calc(var(--u) * 18);background:var(--tint-b);opacity:0;transform:translateY(calc(var(--u) * 28));transition:opacity .45s,transform .45s}
+.rs.sh{opacity:1;transform:none}
+.rs.bad{background:var(--tint-o)}
+.ph-st{display:inline-flex;align-items:center;gap:calc(var(--u) * 8);font:800 calc(var(--u) * 30)/1.25 var(--f-body);letter-spacing:calc(var(--u) * 1);color:var(--blue);border:calc(var(--u) * 4) double var(--blue);border-radius:calc(var(--u) * 12);padding:calc(var(--u) * 2) calc(var(--u) * 14);opacity:0;transform:rotate(-5deg) scale(1.7);transition:opacity .3s .15s, transform .45s .15s cubic-bezier(.2,1.5,.4,1)}
+.rs.sh .ph-st{opacity:1;transform:rotate(-4deg) scale(1)}
+.rs.bad .ph-st{color:var(--orange);border-color:var(--orange)}
+.ph-st svg{flex:none;width:calc(var(--u) * 26);height:calc(var(--u) * 26);stroke-width:3}
+.ph-st .n,.rs.bad .ph-st .y{display:none}
+.rs.bad .ph-st .n{display:block}
+.rs p{font:400 var(--s5)/1.3 var(--f-body);margin-top:calc(var(--u) * 10)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.steps{display:flex;flex-direction:column}
+.step{display:flex;align-items:center;gap:calc(var(--u) * 24)}
+.s-check .step{cursor:default}
+.badge{flex:none;width:calc(var(--u) * 64);height:calc(var(--u) * 64);border-radius:50%;background:var(--blue);color:var(--card);display:flex;align-items:center;justify-content:center;font:700 var(--s5)/1 var(--f-mono);transition:box-shadow .25s}
+.step.hl .badge{box-shadow:0 0 0 calc(var(--u) * 10) rgba(35,70,216,.16)}
+.step-t{flex:1;display:flex;flex-direction:column;gap:calc(var(--u) * 4);min-width:0}
+.sl{font:500 var(--s5)/1.3 var(--f-mono);letter-spacing:calc(var(--u) * 2);text-transform:uppercase;color:var(--blue)}
+.sx{font:500 var(--s4)/1.35 var(--f-body)}
+.vline{display:flex;justify-content:center;width:calc(var(--u) * 64);height:calc(var(--u) * 28)}
+.vline::before{content:"";width:calc(var(--u) * 2);height:100%;background:var(--blue);opacity:.35}
+.dark .badge{background:var(--blue-l);color:var(--ink)}
+.dark .vline::before{background:var(--blue-l);opacity:.45}
+.mvp{display:flex;gap:calc(var(--u) * 24)}
+.mvp-c{flex:1;min-width:0;display:flex;flex-direction:column;gap:calc(var(--u) * 12);background:var(--card);border:1px solid var(--rule);border-radius:calc(var(--u) * 20);padding:calc(var(--u) * 28) calc(var(--u) * 32)}
+.mvp-c .eyebrow{letter-spacing:calc(var(--u) * 2)}
+.mvp-x{font:400 var(--s4)/1.35 var(--f-body);color:var(--soft)}
+
+/* 6 customer */
+.s-customer{gap:calc(var(--u) * 24)}
+.ans{font:700 var(--s2)/1.1 var(--f-display);letter-spacing:calc(var(--u) * -1);color:var(--blue)}
+.roles{display:flex;flex-wrap:wrap;gap:calc(var(--u) * 16)}
+.role{display:flex;align-items:baseline;gap:calc(var(--u) * 12);padding:calc(var(--u) * 14) calc(var(--u) * 22);border-radius:999px;border:calc(var(--u) * 2) solid var(--rule);background:var(--card);color:var(--ink);cursor:pointer;transition:background-color .2s,border-color .2s,color .2s}
+.role:hover{border-color:var(--blue)}
+.role .rk{font:500 var(--s5)/1.2 var(--f-mono);letter-spacing:calc(var(--u) * 2);text-transform:uppercase;color:var(--muted)}
+.role b{font:600 var(--s4)/1.2 var(--f-body)}
+.role .tagx{font:500 var(--s5)/1.2 var(--f-body);color:var(--orange)}
+.role.is-on{background:var(--blue);border-color:var(--blue);color:var(--paper)}
+.role.is-on .rk,.role.is-on .tagx{color:var(--paper)}
+.rdetail{font:400 var(--s4)/1.35 var(--f-body);color:var(--soft)}
+.cards2{display:flex;gap:calc(var(--u) * 32);transform-style:preserve-3d}
+.cardx{display:flex;flex-direction:column;gap:calc(var(--u) * 20);background:var(--card);border:1px solid var(--rule);border-radius:calc(var(--u) * 24);padding:calc(var(--u) * 36) calc(var(--u) * 40);transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s}
+.c600{flex:none;width:calc(var(--u) * 600)}
+.grow{flex:1;min-width:0}
+.cardx .eyebrow,.mcard .eyebrow{letter-spacing:calc(var(--u) * 2)}
+.chan{display:flex;align-items:flex-start;gap:calc(var(--u) * 24)}
+.chip{flex:none;width:calc(var(--u) * 72);height:calc(var(--u) * 72);border-radius:50%;background:var(--blue);color:var(--card);display:flex;align-items:center;justify-content:center}
+.chip svg{width:calc(var(--u) * 40);height:calc(var(--u) * 40)}
+.chan-t{display:flex;flex-direction:column;align-items:flex-start;gap:calc(var(--u) * 12);min-width:0}
+.chan-t b{font:600 var(--s4)/1.35 var(--f-body)}
+.tag-o{font:500 var(--s5)/1.3 var(--f-body);color:var(--orange);border:calc(var(--u) * 2) solid var(--orange);border-radius:999px;padding:calc(var(--u) * 4) calc(var(--u) * 16)}
+.princ{display:flex;gap:calc(var(--u) * 32)}
+.princ > div{flex:1;min-width:0;display:flex;flex-direction:column;gap:calc(var(--u) * 12)}
+.princ svg{width:calc(var(--u) * 56);height:calc(var(--u) * 56);color:var(--blue)}
+.princ p{font:500 var(--s4)/1.35 var(--f-body)}
+
+/* 7 model */
+.s-model{gap:calc(var(--u) * 48)}
+.mtop{display:flex;align-items:flex-start;gap:calc(var(--u) * 16)}
+.mtop .chip{width:calc(var(--u) * 60);height:calc(var(--u) * 60)}
+.mtop .chip svg{width:calc(var(--u) * 34);height:calc(var(--u) * 34)}
+.nw{white-space:nowrap}
+.mcards{display:flex;gap:calc(var(--u) * 24);transform-style:preserve-3d}
+.mcard{flex:1;min-width:0;display:flex;flex-direction:column;gap:calc(var(--u) * 18);background:var(--card);border:1px solid var(--rule);border-radius:calc(var(--u) * 24);padding:calc(var(--u) * 34);transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s}
+.mcard.free{background:var(--blue);border-color:var(--blue);color:var(--paper)}
+.mcard.free .chip{background:var(--paper);color:var(--blue)}
+.who{display:flex;flex-direction:column;gap:calc(var(--u) * 8)}
+.who .eyebrow{color:var(--muted)}
+.mcard.free .who .eyebrow,.mcard.free .pnote{color:var(--paper)}
+.who-x{font:500 var(--s4)/1.35 var(--f-body)}
+.mcard hr{width:100%;margin:0;border:0;border-top:calc(var(--u) * 2) solid var(--rule)}
+.mcard.free hr{border-top-color:rgba(242,238,227,.4)}
+.price{font:700 var(--s3)/1.2 var(--f-display)}
+.pnote{font:400 var(--s5)/1.35 var(--f-body);color:var(--muted)}
+.pchips{display:flex;gap:calc(var(--u) * 8)}
+.pchip{flex:1;min-width:0;border:calc(var(--u) * 2) solid var(--rule);background:var(--paper);border-radius:999px;padding:calc(var(--u) * 9) 0;font:600 var(--s5)/1 var(--f-body);font-variant-numeric:tabular-nums;color:var(--ink);cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}
+.pchip:hover{border-color:var(--ink)}
+.pchip.is-on{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.note{font:400 var(--s5)/1.4 var(--f-body);color:var(--muted)}
+.hl{color:var(--blue)}
+
+/* 8 next */
+.s-next{gap:calc(var(--u) * 44)}
+.w1100{width:calc(var(--u) * 1100)}
+.qr-wrap{position:absolute;left:calc(var(--u) * 1372);top:calc(var(--u) * 248);width:calc(var(--u) * 420);transform-style:preserve-3d}
+.qrcard{position:relative;display:flex;flex-direction:column;align-items:center;gap:calc(var(--u) * 20);background:var(--paper);color:var(--ink);border-radius:calc(var(--u) * 28);padding:calc(var(--u) * 40);box-shadow:0 calc(var(--u) * 24) calc(var(--u) * 64) rgba(0,0,0,.35);text-decoration:none;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.qrcard:hover{transform:translateZ(calc(var(--u) * 50)) rotateY(-6deg)}
+.qrcard img{display:block;width:calc(var(--u) * 340);height:calc(var(--u) * 340)}
+.qrcard .qr-l{text-align:center}
+.qrcard .eyebrow{letter-spacing:calc(var(--u) * 3);color:var(--muted)}
+.when2{flex:none;font:600 var(--s5)/1 var(--f-mono);letter-spacing:calc(var(--u) * 1);text-transform:uppercase;color:var(--blue-l);border:calc(var(--u) * 2) solid rgba(143,166,255,.5);border-radius:999px;padding:calc(var(--u) * 8) calc(var(--u) * 14);white-space:nowrap}
+.ask{display:flex;flex-direction:column;gap:calc(var(--u) * 10);background:rgba(255,138,76,.10);border:calc(var(--u) * 2) dashed var(--orange-l);border-radius:calc(var(--u) * 20);padding:calc(var(--u) * 26) calc(var(--u) * 36)}
+.ask .eyebrow{letter-spacing:calc(var(--u) * 2)}
+.ask-x{font:500 var(--s4)/1.35 var(--f-body)}
+.team{font:500 var(--s5)/1.4 var(--f-mono);letter-spacing:calc(var(--u) * 1);color:var(--soft-d)}
+
+/* controls */
+.hud{position:fixed;left:0;right:0;bottom:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px max(16px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));background:linear-gradient(to top, rgba(7,11,28,.88), rgba(7,11,28,0));font:500 13px/1 var(--f-mono);letter-spacing:.06em;color:var(--soft-d);transition:opacity .4s}
+.hud.idle{opacity:0;pointer-events:none}
+.hud-l{display:flex;align-items:center;gap:14px;min-width:0}
+.keys{color:var(--muted-d);white-space:nowrap}
+.dots{display:flex;gap:6px}
+.dot{width:26px;height:6px;padding:0;border:0;border-radius:3px;background:rgba(184,193,218,.3);cursor:pointer;transition:background-color .3s,width .3s}
+.dot.is-on{width:40px;background:var(--blue-l)}
+.hud-r{display:flex;align-items:center;gap:8px}
+.count{min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+.hbtn{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;border:1px solid rgba(184,193,218,.25);background:rgba(14,22,51,.6);color:var(--paper);cursor:pointer;transition:background-color .2s}
+.hbtn:hover,.hbtn.is-on{background:rgba(35,70,216,.6)}
+.hbtn svg{width:18px;height:18px}
+@media (max-width: 1100px){.keys{display:none}}
+.timer{position:fixed;z-index:6;top:calc(14px + env(safe-area-inset-top, 0px));right:max(16px, env(safe-area-inset-right, 0px));padding:10px 14px;border-radius:10px;background:rgba(14,22,51,.85);font:600 20px/1 var(--f-mono);font-variant-numeric:tabular-nums;color:var(--paper)}
+.timer.late{color:var(--orange-l)}
+.ov-cap{position:fixed;z-index:5;left:0;right:0;top:calc(18px + env(safe-area-inset-top, 0px));padding-inline:16px;text-align:center;font:500 13px/1.4 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--soft-d);opacity:0;pointer-events:none;transition:opacity .4s}
+html.ov .ov-cap{opacity:1}
+html.ov .slide{visibility:visible;cursor:pointer}
+html.ov .slide.sel{outline:calc(var(--u) * 10) solid var(--blue-l)}
+html.ov .slide *{pointer-events:none}
+.laser{position:fixed;left:0;top:0;z-index:9;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:radial-gradient(circle, var(--orange-l) 0 28%, rgba(255,138,76,.35) 52%, rgba(255,138,76,0) 72%);pointer-events:none;display:none}
+html.laser-on .laser{display:block}
+html.laser-on .viewport{cursor:none}
+
+/* phones and short screens: stacked reading mode */
+@media (max-width: 760px), (max-height: 520px){
+  :root{--u:0.5px;--s1:46px;--s2:30px;--s3:21px;--s4:17px;--s5:13px;--pad:20px}
+  body{overflow:auto}
+  .viewport{position:static;display:block;padding:0;perspective:none;overflow:visible}
+  .tilt,.stage{position:static;width:auto;height:auto;transform:none !important}
+  .slide{position:relative;visibility:visible;width:auto;height:auto;transform:none !important;box-shadow:none;gap:20px;padding-block:40px;padding-left:max(20px, env(safe-area-inset-left, 0px));padding-right:max(20px, env(safe-area-inset-right, 0px))}
+  .foot,.shade,.hud,.ov-cap,.timer,.laser{display:none !important}
+  .w920,.w1192,.w1100,.c600{width:auto}
+  .z{transform:none !important}
+  .cover-title{white-space:normal}
+  .s-cover{overflow:hidden;gap:22px}
+  .guilloche,.s-cover .guilloche,.s-next .guilloche{left:0;width:100%}
+  .cover-doc{position:relative;left:auto;top:auto;width:100%;order:2}
+  .cover-qr{order:3}
+  .stamp{left:22%;top:18%;width:auto;padding:8px 14px;gap:8px}
+  .stamp svg{width:28px;height:28px}
+  .stats,.pair,.tiles,.mvp,.cards2,.mcards,.princ,.chan{flex-direction:column}
+  .stats > .stat{width:auto}
+  .stats-r{border-left:0;padding-left:0;border-top:2px solid var(--rule);padding-top:20px}
+  .waffle{grid-template-rows:none;grid-auto-flow:row;grid-template-columns:repeat(31, 1fr);grid-auto-columns:auto;gap:2px}
+  .waffle i{aspect-ratio:1;border-width:1.5px;border-radius:2px}
+  .notice{flex-wrap:wrap;gap:10px}
+  .notice p{flex-basis:100%}
+  .risk-ordr{position:relative;left:auto;top:auto;width:100%;max-width:420px}
+  .risk-phone{display:none}
+  .tile.is-sel{transform:none}
+  .tile:not(.is-sel):hover,.cardx:hover,.mcard:hover,.qrcard:hover{transform:none;box-shadow:none}
+  .proto-l{position:static;width:auto;text-align:left;order:4}
+  .phone-wrap{--u:0.84px;--s5:calc(var(--u) * 24);position:relative;left:auto;top:auto;width:calc(var(--u) * 400);max-width:100%;height:calc(var(--u) * 744);margin-inline:auto;order:5}
+  .phone{transform:none}
+  .s-check .head{order:1} .s-check .steps{order:2} .s-check .mvp{order:3} .spacer{display:none}
+  .qr-wrap{position:relative;left:auto;top:auto;width:auto;max-width:320px;order:5}
+  .qrcard{padding:22px}
+  .qrcard img{width:100%;height:auto}
+  .s-next .step{flex-wrap:wrap}
+}
+@media (prefers-reduced-motion: reduce){
+  .rw.on .ic{animation:none}
+  .tile,.cardx,.mcard,.qrcard,.qr,.flip-in{transition:none}
+}
+</style>
+
+<div class="viewport" id="viewport">
+<div class="tilt" id="tilt">
+<div class="stage" id="stage" aria-roledescription="танилцуулга">
+
+<section class="slide dark s-cover on" id="s1" data-title="Нүүр" aria-roledescription="слайд" aria-label="1 / 8">
+  <canvas class="guilloche" data-cx="0.606" data-cy="0.42" data-dw="1320" aria-hidden="true"></canvas>
+  <div class="cover-doc z" style="--z:70">
+    <div class="doc" id="doc" title="Дарж тамга дарна уу">
+      <img src="ordr_top.webp" alt="Өмчлөх эрхийн ордер" width="797" height="256">
+      <div class="stamp" id="stamp" data-a="stamp" data-d="500">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>
+        <div class="stamp-t"><b>ШАЛГАСАН</b><span>2026.10.18</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="cover-text">
+    <p class="eyebrow c-bl">UB Startup Town · Ideathon 2026</p>
+    <h1 class="cover-title">ҮХХ ЗӨВЛӨХ</h1>
+    <div class="cover-lines" data-a="up" data-d="120">
+      <p class="cover-tag">Төлөхөөсөө өмнө баттай шалга.</p>
+      <p class="cover-sub">Байрны жинхэнэ эзнийг төрийн лавлагаагаар шалгана.</p>
+    </div>
+  </div>
+  <div class="cover-qr" data-a="up" data-d="300">
+    <a class="qr" href="https://orgil1319.github.io/static-ubbair/" target="_blank" rel="noopener"><img src="qr.svg" alt="QR код: прототипийн холбоос" width="168" height="168"></a>
+    <div class="qr-t"><p class="qr-l">Утсаараа уншуулаад туршаарай</p><p class="eyebrow c-bl">Прототип</p></div>
+  </div>
+  <div class="shade"></div>
+</section>
+
+<section class="slide s-fraud" id="s2" data-title="Залилан" aria-roledescription="слайд" aria-label="2 / 8">
+  <div class="head">
+    <h2 class="t">Түрээсийн залилан 8-р сард оргилдог</h2>
+    <p class="lead">Жил бүр оюутнууд орон нутгаас ирэх үед <span class="src">(Цагдаа, 2025.08.11)</span></p>
+  </div>
+  <div class="stats">
+    <div class="stat" data-a="up" data-d="100">
+      <p class="num" data-count="1000" data-suffix="+">1,000+</p>
+      <p class="cap">2025 онд бүртгэгдсэн үл хөдлөх хөрөнгийн залилан</p>
+      <p class="src">(ikon.mn, 2026.02.26)</p>
+    </div>
+    <div class="stats-r">
+      <div class="pair">
+        <div class="stat hov" data-hl="all" data-a="up" data-d="220">
+          <p class="num" data-count="62">62</p>
+          <p class="cap">зөвхөн 2024 оны 8-р сарын түрээсийн залилан</p>
+          <p class="src">(Цагдаа, 2025.08.11)</p>
+        </div>
+        <div class="stat hov" data-hl="on" data-a="up" data-d="340">
+          <p class="num o" data-count="39">39</p>
+          <p class="cap">нь «байр түрээслүүлнэ» гэж хуурч урьдчилгаа авсан хэрэг</p>
+          <p class="src">(Цагдаа, 2025.08.11)</p>
+        </div>
+      </div>
+      <div class="waffle-w">
+        <div class="waffle" id="waffle" role="img" aria-label="62 дөрвөлжин: 39 нь урьдчилгаа авсан хэрэг, 23 нь бусад"></div>
+        <p class="src">Нэг дөрвөлжин — нэг хэрэг. Улбар шар нь урьдчилгаа авсан хэрэг.</p>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="notice" data-a="up" data-d="520">
+    <span class="pill">Цагдаагийн зөвлөмж</span>
+    <p>«Өмчлөх эрхийн гэрчилгээ, лавлагааг заавал шалгаарай.» Гэвч зар дээрээс үүнийг шалгах хялбар арга алга.</p>
+  </div>
+  <div class="foot"><span>ҮХХ ЗӨВЛӨХ</span><span>02 / 08</span></div>
+  <div class="shade"></div>
+</section>
+
+<section class="slide s-risks" id="s3" data-title="Залилангийн арга" aria-roledescription="слайд" aria-label="3 / 8">
+  <div class="risk-ordr z" style="--z:30"><img src="ordr_hand.webp" alt="Өмчлөх эрхийн ордер барьсан гар" width="757" height="765"></div>
+  <div class="risk-phone z" style="--z:110"><img src="phone_id.webp" alt="Утсан дээрх иргэний үнэмлэх" width="499" height="353" data-a="rise" data-d="450"></div>
+  <div class="head w920">
+    <h2 class="t">Залилангийн 3 арга</h2>
+    <p class="hint">Мөр бүр дээр дарж, бид хэрхэн сэргийлэхийг харна уу</p>
+  </div>
+  <div class="flips w920">
+    <button class="flip" type="button" aria-pressed="false" data-a="flip" data-d="120">
+      <span class="flip-in">
+        <span class="ff"><span class="rn">01</span><span class="ft"><b>Хуурамч гэрчилгээ үзүүлнэ</b><span>Ордерын зургийг хэдхэн минутад засварлаж болно.</span></span><svg class="i turn" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 15"/><path d="M4 20v-5h5"/></svg></span>
+        <span class="fb"><span class="rn">01</span><span class="ft"><b>Бид ингэж сэргийлнэ</b><span>Лавлагааны дугаарыг e-mongolia.mn/check сайтаар шалгахад хуурамч нь шууд илэрнэ.</span></span></span>
+      </span>
+    </button>
+    <button class="flip" type="button" aria-pressed="false" data-a="flip" data-d="240">
+      <span class="flip-in">
+        <span class="ff"><span class="rn">02</span><span class="ft"><b>Бусдын үнэмлэхийг ашиглана</b><span>Үнэмлэх жинхэнэ ч эзэн нь өөр хүн байж болно.</span></span><svg class="i turn" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 15"/><path d="M4 20v-5h5"/></svg></span>
+        <span class="fb"><span class="rn">02</span><span class="ft"><b>Бид ингэж сэргийлнэ</b><span>Мөнгө авах дансны нэр лавлагаан дээрх эзний нэртэй таарахгүй бол анхааруулга гарна.</span></span></span>
+      </span>
+    </button>
+    <button class="flip" type="button" aria-pressed="false" data-a="flip" data-d="360">
+      <span class="flip-in">
+        <span class="ff"><span class="rn">03</span><span class="ft"><b>Амаар тохиролцоод урьдчилгаа авна</b><span>Гэрээгүй тул мөнгөө нэхэх баримт үлдэхгүй.</span></span><svg class="i turn" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 15"/><path d="M4 20v-5h5"/></svg></span>
+        <span class="fb"><span class="rn">03</span><span class="ft"><b>Бид ингэж сэргийлнэ</b><span>Дараагийн шатанд хуульчтай хамтран хоёр талд шударга гэрээний загвар гаргана.</span></span></span>
+      </span>
+    </button>
+  </div>
+  <div class="foot"><span>ҮХХ ЗӨВЛӨХ</span><span>03 / 08</span></div>
+  <div class="shade"></div>
+</section>
+
+<section class="slide blue s-vision" id="s4" data-title="Алсын хараа" aria-roledescription="слайд" aria-label="4 / 8">
+  <p class="eyebrow">Алсын хараа</p>
+  <h2 class="t">Үл хөдлөх хөрөнгийн хамгийн<br>найдвартай платформ болох</h2>
+  <div class="spacer"></div>
+  <div class="tiles">
+    <button class="tile now is-sel" type="button" data-i="0" aria-pressed="true" data-a="flip" data-d="160">
+      <span class="tile-h"><span class="tn">01</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.4 1.7 2.9-.1 1 2.7 2.3 1.8-.8 2.8.8 2.8-2.3 1.8-1 2.7-2.9-.1-2.4 1.7-2.4-1.7-2.9.1-1-2.7-2.3-1.8.8-2.8-.8-2.8 2.3-1.8 1-2.7 2.9.1z"/><path d="M8.6 12.2l2.3 2.3 4.5-4.7"/></svg><span class="when">Одоо</span></span>
+      <span class="tl">Гэрчилгээ</span>
+      <span class="tt">Өмчлөх эрхийн гэрчилгээг шалгах</span>
+    </button>
+    <button class="tile soon" type="button" data-i="1" aria-pressed="false" data-a="flip" data-d="260">
+      <span class="tile-h"><span class="tn">02</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1M10.5 21v-3h3v3"/></svg><span class="when">Дараа</span></span>
+      <span class="tl">Тусгай зөвшөөрөл</span>
+      <span class="tt">Барилгын албан мэдээлэл</span>
+    </button>
+    <button class="tile" type="button" data-i="2" aria-pressed="false" data-a="flip" data-d="360">
+      <span class="tile-h"><span class="tn">03</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5l6-2.5 6 2.5 6-2.5v13.5l-6 2.5-6-2.5-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></svg><span class="when">Дараа</span></span>
+      <span class="tl">Газрын зураг</span>
+      <span class="tt">Үер, нуралтын эрсдэлийн зураг</span>
+    </button>
+    <button class="tile" type="button" data-i="3" aria-pressed="false" data-a="flip" data-d="460">
+      <span class="tile-h"><span class="tn">04</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 11h7M9 14.5h5"/><path d="M9 18.5c1-1.2 1.9-1.2 2.6 0s1.6 1.2 2.6 0"/></svg><span class="when">Дараа</span></span>
+      <span class="tl">Гэрээ</span>
+      <span class="tt">Хоёр талд шударга гэрээ</span>
+    </button>
+  </div>
+  <div class="vdetail" data-a="up" data-d="600" aria-live="polite">
+    <p class="eyebrow" id="vd-k">01 · Одоо</p>
+    <p id="vd-t">Одоо эндээс эхэлнэ: байрны эзэн жинхэнэ эсэхийг төрийн лавлагаагаар шалгана.</p>
+  </div>
+  <div class="foot"><span>ҮХХ ЗӨВЛӨХ</span><span>04 / 08</span></div>
+  <div class="shade"></div>
+</section>
+
+<section class="slide s-check" id="s5" data-title="Шийдэл" aria-roledescription="слайд" aria-label="5 / 8">
+  <p class="proto-l">Прототип · жишээ өгөгдөл</p>
+  <div class="phone-wrap z" style="--z:90">
+    <div class="phone" data-a="pop" data-d="200">
+      <div class="screen">
+        <div class="notch"></div>
+        <div class="tabs" role="group" aria-label="Жишээ сонгох">
+          <button class="tab is-on" type="button" data-sc="0" aria-pressed="true">Жинхэнэ</button>
+          <button class="tab" type="button" data-sc="1" aria-pressed="false">Залилагч</button>
+        </div>
+        <div class="ls"><div><b id="ph-t">2 өрөө байр</b><span id="ph-s">Жишээ зар · 1</span></div><button class="ph-go" id="ph-go" type="button">Шалгах</button></div>
+        <div class="rw ok" id="r0"><span class="ic"><svg class="i y" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><svg class="i n" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5.5v8"/><path d="M12 18.5h.01"/></svg></span><div class="tx"><b>Лавлагаа</b><span id="d0">Сүүлийн 7 хоногийнх</span></div></div>
+        <div class="rw ok" id="r1"><span class="ic"><svg class="i y" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><svg class="i n" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5.5v8"/><path d="M12 18.5h.01"/></svg></span><div class="tx"><b>e-mongolia.mn/check</b><span id="d1">Лавлагаа жинхэнэ</span></div></div>
+        <div class="rw ok" id="r2"><span class="ic"><svg class="i y" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><svg class="i n" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5.5v8"/><path d="M12 18.5h.01"/></svg></span><div class="tx"><b>Нэр тулгалт</b><span id="d2a">Эзэн: Б. Болд</span><label class="acct" id="acct-l"><span>Данс:</span><input id="acct" type="text" value="Б. Болд" autocomplete="off" spellcheck="false" aria-label="Мөнгө хүлээн авах дансны нэр"></label></div></div>
+        <div class="rs sh" id="rs" aria-live="polite"><div class="ph-st"><svg class="i y" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><svg class="i n" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5.5v8"/><path d="M12 18.5h.01"/></svg><span id="stt">ШАЛГАСАН</span></div><p id="rp">Нэр таарч байна. Лавлагаа жинхэнэ.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="head w1192">
+    <h2 class="t">Төлөхөөсөө өмнө шалгана</h2>
+    <p class="hint">Утсан дээрх дансны нэрийг өөрчлөөд «Шалгах» дээр дарж үзээрэй</p>
+  </div>
+  <div class="steps w1192">
+    <div class="step" data-row="0" data-a="up" data-d="120"><span class="badge">01</span><div class="step-t"><p class="sl">Лавлагаа</p><p class="sx">Эзэн сүүлийн 7 хоногт авсан e-Mongolia лавлагаагаа илгээнэ.</p></div></div>
+    <span class="vline" aria-hidden="true"></span>
+    <div class="step" data-row="1" data-a="up" data-d="240"><span class="badge">02</span><div class="step-t"><p class="sl">Шалгалт</p><p class="sx">Бид лавлагаа жинхэнэ эсэхийг e-mongolia.mn/check сайтаар шалгана.</p></div></div>
+    <span class="vline" aria-hidden="true"></span>
+    <div class="step" data-row="2" data-a="up" data-d="360"><span class="badge">03</span><div class="step-t"><p class="sl">Төлбөр</p><p class="sx">Дансны нэр эзний нэртэй таарвал л мөнгөө шилжүүлнэ.</p></div></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="mvp w1192">
+    <div class="mvp-c" data-a="up" data-d="480"><p class="eyebrow c-b">Эхний хувилбар (MVP)</p><p class="mvp-x">Өнөөдрөөс ажиллана: шалгалтыг баг гараар хийх тул ямар нэг гэрээ шаардлагагүй.</p></div>
+    <div class="mvp-c" data-a="up" data-d="580"><p class="eyebrow c-m">Дараагийн шат</p><p class="mvp-x">ДАН, ХУР системтэй холбогдож шалгалтыг автоматжуулна.</p></div>
+  </div>
+  <div class="foot"><span>ҮХХ ЗӨВЛӨХ</span><span>05 / 08</span></div>
+  <div class="shade"></div>
+</section>
+
+<section class="slide s-customer" id="s6" data-title="Анхны хэрэглэгч" aria-roledescription="слайд" aria-label="6 / 8">
+  <h2 class="t">Хэнээс эхлэх вэ?</h2>
+  <p class="ans" data-a="up" data-d="100">Орон нутгаас ирж суралцаж буй оюутнууд</p>
+  <p class="lead" data-a="up" data-d="180">Тэд байраа холоос хайж, үзээгүй байрандаа урьдчилгаа төлөхийг шаардагддаг.</p>
+  <div class="roles" data-a="up" data-d="260">
+    <button class="role is-on" type="button" data-r="0" aria-pressed="true"><span class="rk">Хэрэглэгч</span><b>Оюутан</b></button>
+    <button class="role" type="button" data-r="1" aria-pressed="false"><span class="rk">Шийдвэр гаргагч</span><b>Оюутан, эцэг эх</b><span class="tagx">таамаг</span></button>
+    <button class="role" type="button" data-r="2" aria-pressed="false"><span class="rk">Төлөгч</span><b>Байрны эзэн</b></button>
+  </div>
+  <p class="rdetail" id="rdetail" aria-live="polite">Оюутан шалгалтыг үнэгүй ашиглана.</p>
+  <div class="spacer"></div>
+  <div class="cards2">
+    <div class="cardx c600" data-a="flip" data-d="320">
+      <p class="eyebrow c-b">Хэрхэн хүрэх вэ</p>
+      <div class="chan">
+        <span class="chip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8.5" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9.5" r="2.4"/><path d="M15.8 14.2c2.4.2 4.1 1.8 4.7 4.8"/></svg></span>
+        <div class="chan-t"><b>Оюутны түрээсийн Facebook группийн админуудаар дамжуулан</b><span class="tag-o">таамаг, шалгаагүй</span></div>
+      </div>
+    </div>
+    <div class="cardx grow" data-a="flip" data-d="420">
+      <p class="eyebrow c-b">Манай зарчим</p>
+      <div class="princ">
+        <div><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7 5.5-5.6"/></svg><p>Түрээсийн мөнгийг дамжуулж авахгүй</p></div>
+        <div><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7 5.5-5.6"/></svg><p>Бичиг баримт хадгалахгүй</p></div>
+        <div><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7 5.5-5.6"/></svg><p>Эзний нэрийг нийтэд ил гаргахгүй</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>ҮХХ ЗӨВЛӨХ</span><span>06 / 08</span></div>
+  <div class="shade"></div>
+</section>
+
+<section class="slide s-model" id="s7" data-title="Орлого" aria-roledescription="слайд" aria-label="7 / 8">
+  <h2 class="t">Байр хайгчид үнэгүй,<br><span class="hl">итгэл хүлээхийг</span> хүссэн тал төлнө</h2>
+  <div class="mcards">
+    <div class="mcard free" data-a="flip" data-d="140">
+      <div class="mtop"><span class="chip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></svg></span><div class="who"><p class="eyebrow">Байр хайгч</p><p class="who-x">Эзнийг шалгуулна</p></div></div>
+      <div class="spacer"></div><hr>
+      <p class="price">Үнэгүй</p>
+      <p class="pnote">Апп суулгах шаардлагагүй, ганц холбоос</p>
+    </div>
+    <div class="mcard" data-a="flip" data-d="240">
+      <div class="mtop"><span class="chip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l8-8M16 7l2.5 2.5M14 9l2 2"/></svg></span><div class="who"><p class="eyebrow">Байрны эзэн</p><p class="who-x">«Шалгасан» тэмдэгтэй зар</p></div></div>
+      <div class="spacer"></div><hr>
+      <p class="price">Зар бүрээр</p>
+      <div class="pchips" role="group" aria-label="Туршиж үзэх үнэ">
+        <button class="pchip" type="button" data-p="5,000">5,000</button>
+        <button class="pchip is-on" type="button" data-p="10,000">10,000</button>
+        <button class="pchip" type="button" data-p="20,000">20,000</button>
+      </div>
+      <p class="pnote" id="pn">₮10,000 — 10 эзнээс асууж шалгах үнэ (таамаг)</p>
+    </div>
+    <div class="mcard" data-a="flip" data-d="340">
+      <div class="mtop"><span class="chip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/></svg></span><div class="who"><p class="eyebrow">Агентлаг</p><p class="who-x">Олон зарын багц</p></div></div>
+      <div class="spacer"></div><hr>
+      <p class="price">Сараар</p>
+      <p class="pnote">Олон зарыг нэг дор шалгуулна</p>
+    </div>
+    <div class="mcard" data-a="flip" data-d="440">
+      <div class="mtop"><span class="chip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><div class="who"><p class="eyebrow">Банк, зарын сайт</p><p class="who-x">Шалгалтыг <span class="nw">API-аар</span> авна</p></div></div>
+      <div class="spacer"></div><hr>
+      <p class="price">Гэрээгээр</p>
+      <p class="pnote">Өөрсдийн системээсээ шууд холбогдоно</p>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <p class="note" data-a="up" data-d="600">Үнэ бүгд таамаг бөгөөд хэрэглэгчидтэй хараахан шалгаагүй. Гол зардал нь шалгалт бүрийн гар ажил тул хугацааг туршилтаар хэмжинэ. Бид түрээсийн мөнгөнөөс хувь авахгүй.</p>
+  <div class="foot"><span>ҮХХ ЗӨВЛӨХ</span><span>07 / 08</span></div>
+  <div class="shade"></div>
+</section>
+
+<section class="slide dark s-next" id="s8" data-title="Дараагийн алхам" aria-roledescription="слайд" aria-label="8 / 8">
+  <canvas class="guilloche" data-cx="0.648" data-cy="0.474" data-dw="960" aria-hidden="true"></canvas>
+  <div class="qr-wrap z" style="--z:60">
+    <a class="qrcard" href="https://orgil1319.github.io/static-ubbair/" target="_blank" rel="noopener" data-a="pop" data-d="200">
+      <img src="qr.svg" alt="QR код: прототипийн холбоос" width="340" height="340">
+      <p class="qr-l">Утсаараа уншуулаад туршаарай</p>
+      <p class="eyebrow">Прототип</p>
+    </a>
+  </div>
+  <h2 class="t w1100">Дараагийн алхам</h2>
+  <div class="steps w1100">
+    <div class="step" data-a="up" data-d="120"><span class="badge">01</span><p class="sx grow">E-Mongolia Academy-тай уулзаж, ДАН, <span class="nw">ХУР-тай</span> холбогдох боломжийг тодруулна</p><span class="when2">2 долоо хоногт</span></div>
+    <span class="vline" aria-hidden="true"></span>
+    <div class="step" data-a="up" data-d="240"><span class="badge">02</span><p class="sx grow">Оюутны Facebook группт 20 бодит зараар туршина</p><span class="when2">1 сарын дотор</span></div>
+    <span class="vline" aria-hidden="true"></span>
+    <div class="step" data-a="up" data-d="360"><span class="badge">03</span><p class="sx grow">Банктай хамтын ажиллагааны талаар ярилцана</p><span class="when2">Дараа нь</span></div>
+  </div>
+  <div class="ask w1100" data-a="up" data-d="480">
+    <p class="eyebrow c-ol">Бидэнд туслаач</p>
+    <p class="ask-x">E-Mongolia Academy, банк, зарын сайт, хуульчтай холбож өгөөч.</p>
+  </div>
+  <p class="team w1100" data-a="up" data-d="560">Баг: программ хангамжийн инженер 3 охин · 3 жил хамт ажилласан · хакатоны шагналтай</p>
+  <div class="spacer"></div>
+  <div class="foot"><span>ҮХХ ЗӨВЛӨХ</span><span>08 / 08</span></div>
+  <div class="shade"></div>
+</section>
+
+</div>
+</div>
+</div>
+
+<div class="hud" id="hud">
+  <div class="hud-l"><div class="dots" id="dots"></div><span class="keys">← → · O бүх слайд · F бүтэн дэлгэц · T цаг · L заагч</span></div>
+  <div class="hud-r">
+    <span class="count" id="count">01 / 08</span>
+    <button class="hbtn" id="b-prev" type="button" aria-label="Өмнөх слайд"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="hbtn" id="b-next" type="button" aria-label="Дараах слайд"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    <button class="hbtn" id="b-ov" type="button" aria-label="Бүх слайд (O)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1"/></svg></button>
+    <button class="hbtn" id="b-ls" type="button" aria-label="Заагч (L)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></button>
+    <button class="hbtn" id="b-tm" type="button" aria-label="5 минутын цаг (T)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9.5 2.5h5"/></svg></button>
+    <button class="hbtn" id="b-fs" type="button" aria-label="Бүтэн дэлгэц (F)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+  </div>
+</div>
+<div class="timer" id="timer" hidden>5:00</div>
+<div class="laser" id="laser" aria-hidden="true"></div>
+<p class="ov-cap">Бүх слайд · ← → сонгох · Enter нээх · Esc буцах</p>
+<p class="sr" id="live" aria-live="polite"></p>
+
+<script>
+(function () {
+  'use strict';
+  var D = document, H = D.documentElement;
+  var vp = D.getElementById('viewport'), tilt = D.getElementById('tilt'), stage = D.getElementById('stage');
+  var slides = Array.prototype.slice.call(stage.querySelectorAll('.slide'));
+  var N = slides.length;
+  var hud = D.getElementById('hud'), dotsEl = D.getElementById('dots'), countEl = D.getElementById('count'), live = D.getElementById('live');
+  var mqNarrow = matchMedia('(max-width: 760px), (max-height: 520px)');
+  var mqReduce = matchMedia('(prefers-reduced-motion: reduce)');
+  var cur = 0, busy = false, queued = null, ov = false, ovIdx = 0, ovPhi = 0, ovTarget = 0;
+  var DUR = 950, EASE = 'cubic-bezier(.65,0,.35,1)';
+  function $(id) { return D.getElementById(id); }
+  function all(sel, root) { return Array.prototype.slice.call((root || D).querySelectorAll(sel)); }
+  function narrow() { return mqNarrow.matches; }
+  function reduce() { return mqReduce.matches; }
+  function U() { return stage.clientWidth / 1920 || 0.5; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+
+  /* dots */
+  slides.forEach(function (s, i) {
+    var b = D.createElement('button');
+    b.className = 'dot'; b.type = 'button';
+    b.setAttribute('aria-label', (i + 1) + ': ' + (s.getAttribute('data-title') || ''));
+    b.addEventListener('click', function () { go(i); });
+    dotsEl.appendChild(b);
+  });
+  var dots = Array.prototype.slice.call(dotsEl.children);
+
+  /* slide 2: 62 squares, 39 orange, linked to the numbers */
+  var waffle = $('waffle');
+  for (var w = 0; w < 62; w++) { var c = D.createElement('i'); if (w < 39) c.className = 'on'; waffle.appendChild(c); }
+  all('[data-hl]').forEach(function (el) {
+    var cls = 'hl-' + el.getAttribute('data-hl');
+    function on() { waffle.className = 'waffle dim ' + cls; }
+    function off() { waffle.className = 'waffle'; }
+    el.addEventListener('mouseenter', on);
+    el.addEventListener('mouseleave', off);
+    el.addEventListener('click', function () { if (waffle.classList.contains(cls)) off(); else on(); });
+  });
+
+  /* slide 3: flip a scam to see how it is stopped */
+  var flips = all('.flip');
+  flips.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var on = !b.classList.contains('is-on');
+      b.classList.toggle('is-on', on); b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  });
+
+  /* slide 4: tiles open their detail */
+  var VD = [
+    ['01 · Одоо', 'Одоо эндээс эхэлнэ: байрны эзэн жинхэнэ эсэхийг төрийн лавлагаагаар шалгана.'],
+    ['02 · Дараа', 'Барилгын компанийн тусгай зөвшөөрлийг licence.mn зэрэг албан эх сурвалжаас харуулна.'],
+    ['03 · Дараа', 'Байр үер, хөрсний нуралтын эрсдэлтэй бүсэд байгаа эсэхийг газрын зураг дээр харуулна.'],
+    ['04 · Дараа', 'Хуульчтай хамтран түрээслэгч, эзэн хоёрын эрхийг адил хамгаалсан гэрээний загвар гаргана.']
+  ];
+  var tiles = all('.tile'), vSel = 0, vTimer = 0, vTouched = false;
+  function selTile(i) {
+    vSel = i;
+    tiles.forEach(function (t, k) { t.classList.toggle('is-sel', k === i); t.setAttribute('aria-pressed', k === i ? 'true' : 'false'); });
+    $('vd-k').textContent = VD[i][0]; $('vd-t').textContent = VD[i][1];
+    if (!reduce()) $('vd-t').animate([{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'translateY(0)' }], { duration: 350, easing: 'ease-out' });
+  }
+  tiles.forEach(function (t, i) { t.addEventListener('click', function () { vTouched = true; clearInterval(vTimer); selTile(i); }); });
+  function vCycle(start) {
+    clearInterval(vTimer);
+    if (!start || vTouched) return;
+    vTimer = setInterval(function () { selTile((vSel + 1) % 4); }, 3600);
+  }
+
+  /* slide 5: steps point at the phone rows */
+  all('.s-check .step').forEach(function (st) {
+    var r = +st.getAttribute('data-row');
+    st.addEventListener('mouseenter', function () { st.classList.add('hl'); rows[r].classList.add('hl'); });
+    st.addEventListener('mouseleave', function () { st.classList.remove('hl'); rows[r].classList.remove('hl'); });
+  });
+
+  /* slide 6: who is who */
+  var RD = [
+    'Оюутан шалгалтыг үнэгүй ашиглана.',
+    'Урьдчилгааг ихэвчлэн аав ээж нь гаргадаг гэж үзэж байна. Үүнийг ярилцлагаар шалгана.',
+    '«Шалгасан» тэмдэгтэй зарын төлбөрийг байрны эзэн төлнө.'
+  ];
+  var roles = all('.role');
+  roles.forEach(function (b, i) {
+    b.addEventListener('click', function () {
+      roles.forEach(function (x, k) { x.classList.toggle('is-on', k === i); x.setAttribute('aria-pressed', k === i ? 'true' : 'false'); });
+      $('rdetail').textContent = RD[i];
+    });
+  });
+
+  /* slide 7: price ideas to test */
+  var pchips = all('.pchip');
+  pchips.forEach(function (b) {
+    b.addEventListener('click', function () {
+      pchips.forEach(function (x) { x.classList.toggle('is-on', x === b); });
+      $('pn').textContent = '₮' + b.getAttribute('data-p') + ' — 10 эзнээс асууж шалгах үнэ (таамаг)';
+    });
+  });
+
+  /* cover: click the deed to stamp it again */
+  $('doc').addEventListener('click', function () { stampIt(0); });
+  function stampIt(d) {
+    if (reduce()) return;
+    var u = U();
+    $('stamp').animate([{ opacity: 0, transform: 'rotate(-26deg) scale(2.8)' }, { opacity: 1, transform: 'rotate(-6deg) scale(.9)', offset: .72 }, { opacity: 1, transform: 'rotate(-8deg) scale(1)' }], { duration: 620, delay: d, easing: 'cubic-bezier(.5,0,.75,0)', fill: 'backwards' });
+    $('doc').animate([{ transform: 'translate(0px,0px)' }, { transform: 'translate(' + (5 * u) + 'px,' + (4 * u) + 'px)' }, { transform: 'translate(' + (-3 * u) + 'px,' + (-2 * u) + 'px)' }, { transform: 'translate(0px,0px)' }], { duration: 260, delay: d + 450, easing: 'ease-out' });
+  }
+
+  function setOn() {
+    slides.forEach(function (s, i) {
+      s.classList.toggle('on', i === cur);
+      if (!narrow()) s.setAttribute('aria-hidden', i === cur ? 'false' : 'true'); else s.removeAttribute('aria-hidden');
+    });
+    dots.forEach(function (d, i) { d.classList.toggle('is-on', i === cur); d.setAttribute('aria-current', i === cur ? 'true' : 'false'); });
+    countEl.textContent = pad2(cur + 1) + ' / ' + pad2(N);
+    live.textContent = (cur + 1) + ' / ' + N + ': ' + (slides[cur].getAttribute('data-title') || '');
+    try { history.replaceState(null, '', '#s' + (cur + 1)); } catch (e) {}
+  }
+
+  /* entrance choreography; base = ms until the cube has settled */
+  function enter(s, base) {
+    base = base || 0;
+    if (s.id === 's5') setTimeout(function () { if (slides[cur] === s && !ov) demoAuto(); }, base);
+    if (s.id === 's4') setTimeout(function () { if (slides[cur] === s && !ov) vCycle(true); }, base + 2500);
+    if (reduce()) return;
+    var u = U(), P = 'perspective(' + (1400 * u) + 'px) ';
+    all('[data-a]', s).forEach(function (el) {
+      var t = el.getAttribute('data-a'), d = base + 60 + (+el.getAttribute('data-d') || 0), kf, dur = 760, ez = 'cubic-bezier(.2,.8,.2,1)';
+      if (t === 'stamp') { stampIt(d); return; }
+      if (t === 'up') kf = [{ opacity: .3, transform: 'translateY(' + (40 * u) + 'px)' }, { opacity: 1, transform: 'translateY(0px)' }];
+      else if (t === 'flip') kf = [{ opacity: .3, transform: P + 'rotateX(-72deg)' }, { opacity: 1, transform: P + 'rotateX(0deg)' }];
+      else if (t === 'rise') kf = [{ opacity: 0, transform: 'translateY(' + (90 * u) + 'px) rotate(-6deg)' }, { opacity: 1, transform: 'translateY(0px) rotate(0deg)' }];
+      else if (t === 'pop') { kf = [{ opacity: 0, transform: P + 'rotateY(-40deg) scale(.75)' }, { opacity: 1, transform: P + 'rotateY(0deg) scale(1)' }]; dur = 900; }
+      if (!kf) return;
+      if (t === 'pop' && el.classList.contains('phone')) {
+        kf = [{ opacity: 0, transform: 'rotateY(60deg) rotateX(6deg) translateZ(' + (-200 * u) + 'px)' }, { opacity: 1, transform: 'rotateY(14deg) rotateX(2deg) translateZ(0px)' }];
+        dur = 1000;
+      }
+      if (t === 'flip' && el.classList.contains('tile') && el.classList.contains('is-sel')) {
+        kf[1].transform = P + 'rotateX(0deg) translateY(' + (-12 * u) + 'px)';
+      }
+      el.animate(kf, { duration: dur, delay: d, easing: ez, fill: 'backwards' });
+    });
+    if (s.id === 's2') {
+      Array.prototype.forEach.call(waffle.children, function (c, i) {
+        c.animate([{ opacity: 0, transform: 'scale(.2)' }, { opacity: 1, transform: 'scale(1)' }], { duration: 380, delay: base + 420 + i * 16, easing: 'cubic-bezier(.3,1.6,.5,1)', fill: 'backwards' });
+      });
+    }
+    all('[data-count]', s).forEach(function (el) {
+      var end = +el.getAttribute('data-count'), suf = el.getAttribute('data-suffix') || '', t0 = performance.now() + base + 200, dur = 1300;
+      el.textContent = '0' + suf;
+      function step(t) {
+        var p = Math.min(1, Math.max(0, (t - t0) / dur)), e = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(end * e).toLocaleString('en-US') + suf;
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  function leave(s) {
+    if (s.id === 's5') { demoTok++; demoShow(0); }
+    if (s.id === 's4') { vCycle(false); }
+    if (s.id === 's3') { flips.forEach(function (b) { b.classList.remove('is-on'); b.setAttribute('aria-pressed', 'false'); }); }
+  }
+
+  /* 3D cube turn */
+  function face(a, h) { return 'translateZ(' + (-h) + 'px) rotateY(' + a + 'deg) translateZ(' + h + 'px)'; }
+  function go(i) {
+    if (narrow()) { if (slides[i]) slides[i].scrollIntoView({ behavior: reduce() ? 'auto' : 'smooth' }); return; }
+    if (ov) { exitOverview(i); return; }
+    i = Math.max(0, Math.min(N - 1, i));
+    if (i === cur) return;
+    if (busy) { queued = i; return; }
+    var from = slides[cur], to = slides[i], dir = i > cur ? 1 : -1;
+    leave(from);
+    cur = i;
+    if (D.activeElement && D.activeElement.blur && from.contains(D.activeElement)) D.activeElement.blur();
+    if (reduce()) {
+      setOn();
+      to.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 250 });
+      enter(to, 0);
+      return;
+    }
+    busy = true;
+    from.classList.add('on'); to.classList.add('on');
+    var W = stage.clientWidth, h = W / 2, a = dir > 0 ? -90 : 90;
+    var o = { duration: DUR, easing: EASE, fill: 'forwards' };
+    var A1 = from.animate([{ transform: face(0, h) }, { transform: face(a, h) }], o);
+    var A2 = to.animate([{ transform: face(-a, h) }, { transform: face(0, h) }], o);
+    var S1 = from.querySelector('.shade').animate([{ opacity: 0 }, { opacity: .6 }], o);
+    var S2 = to.querySelector('.shade').animate([{ opacity: .6 }, { opacity: 0 }], o);
+    var ST = stage.animate([{ transform: 'translateZ(0px)' }, { transform: 'translateZ(' + (-W * 0.42) + 'px)', offset: .5 }, { transform: 'translateZ(0px)' }], { duration: DUR, easing: 'ease-in-out' });
+    enter(to, DUR * 0.8);
+    A2.finished.then(function () {
+      setOn();
+      A1.cancel(); A2.cancel(); S1.cancel(); S2.cancel(); ST.cancel();
+      busy = false;
+      if (queued !== null && queued !== cur) { var q = queued; queued = null; go(q); } else queued = null;
+    });
+  }
+
+  /* overview: slides on a 3D ring */
+  function ringR() { return stage.clientWidth * 0.58; }
+  function ringT(i) { return 'rotateY(' + (i * 360 / N) + 'deg) translateZ(' + ringR() + 'px) scale(.42)'; }
+  function stageRing(phi) { return 'translateZ(' + (-ringR() * 1.05) + 'px) rotateX(-7deg) rotateY(' + phi + 'deg)'; }
+  function markSel() { slides.forEach(function (s, i) { s.classList.toggle('sel', i === ovIdx); }); }
+  function enterOverview() {
+    if (ov || busy || narrow()) return;
+    ov = true; H.classList.add('ov'); leave(slides[cur]);
+    tilt.style.transform = ''; tcx = tcy = tx = ty = 0; parallax(false); tiltOn = false;
+    ovIdx = cur; ovTarget = -cur * 360 / N; ovPhi = ovTarget;
+    var o = { duration: reduce() ? 0 : 750, easing: 'cubic-bezier(.2,.8,.2,1)' };
+    stage.style.transform = stageRing(ovPhi);
+    stage.animate([{ transform: 'none' }, { transform: stageRing(ovPhi) }], o);
+    slides.forEach(function (s, i) {
+      s.style.transform = ringT(i);
+      s.animate([{ transform: i === cur ? 'none' : ringT(i), opacity: i === cur ? 1 : 0 }, { transform: ringT(i), opacity: 1 }], o);
+    });
+    markSel(); wake();
+  }
+  function exitOverview(i) {
+    if (!ov) return;
+    ov = false; H.classList.remove('ov');
+    if (typeof i !== 'number') i = ovIdx;
+    var phi = ((ovPhi % 360) + 540) % 360 - 180, ai = i * 360 / N;
+    var rel = ((phi + ai) % 360 + 540) % 360 - 180;
+    var o = { duration: reduce() ? 0 : 700, easing: 'cubic-bezier(.6,0,.2,1)' };
+    var from = 'translateZ(' + (-ringR() * 1.05) + 'px) rotateX(-7deg) rotateY(' + (rel - ai) + 'deg)';
+    stage.style.transform = '';
+    var last = stage.animate([{ transform: from }, { transform: 'none' }], o);
+    slides.forEach(function (s, k) {
+      var rt = ringT(k);
+      s.style.transform = '';
+      if (k === i) s.animate([{ transform: rt }, { transform: 'none' }], o);
+      else s.animate([{ transform: rt, opacity: 1 }, { transform: rt, opacity: 0 }], o);
+      s.classList.remove('sel');
+    });
+    cur = i;
+    last.finished.then(function () { setOn(); enter(slides[cur], 0); });
+  }
+  function ovStep(d) { ovIdx = (ovIdx + d + N) % N; ovTarget -= d * 360 / N; markSel(); }
+
+  /* slide 5: the check, with presets and a name you can type */
+  var SC = [
+    { t: '2 өрөө байр', s: 'Жишээ зар · 1', o: 'Б. Болд', a: 'Б. Болд' },
+    { t: '1 өрөө байр', s: 'Жишээ зар · 2', o: 'Д. Сараа', a: 'Г. Төмөр' }
+  ];
+  var demoTok = 0, curSc = 0;
+  var rows = [$('r0'), $('r1'), $('r2')];
+  var tabs = all('.tab'), acct = $('acct'), acctL = $('acct-l');
+  function norm(x) { return (x || '').toLowerCase().replace(/[\s.\-]/g, ''); }
+  function matches(x) { var a = acct.value.trim(); return a !== '' && norm(a) === norm(x.o); }
+  function rowSt(i, c) { var hl = rows[i].classList.contains('hl'); rows[i].className = (c ? 'rw ' + c : 'rw') + (hl ? ' hl' : ''); }
+  function sleep(ms, k) { return new Promise(function (res, rej) { setTimeout(function () { if (k === demoTok) res(); else rej(0); }, ms); }); }
+  function setTab(i) { tabs.forEach(function (b, k) { b.classList.toggle('is-on', k === i); b.setAttribute('aria-pressed', k === i ? 'true' : 'false'); }); }
+  function result(ok) {
+    $('stt').textContent = ok ? 'ШАЛГАСАН' : 'АНХААРУУЛГА';
+    $('rp').textContent = ok ? 'Нэр таарч байна. Лавлагаа жинхэнэ.' : 'Нэр таарахгүй байна. Эзэнтэй тодруулаарай.';
+    $('rs').className = ok ? 'rs sh' : 'rs sh bad';
+    acctL.classList.toggle('bad', !ok);
+  }
+  function preset(i) {
+    var x = SC[i]; curSc = i; setTab(i);
+    $('ph-t').textContent = x.t; $('ph-s').textContent = x.s;
+    $('d2a').textContent = 'Эзэн: ' + x.o; acct.value = x.a;
+  }
+  function demoShow(i) {
+    preset(i);
+    $('d0').textContent = 'Сүүлийн 7 хоногийнх'; $('d1').textContent = 'Лавлагаа жинхэнэ';
+    var ok = matches(SC[i]);
+    rowSt(0, 'ok'); rowSt(1, 'ok'); rowSt(2, ok ? 'ok' : 'no'); result(ok);
+  }
+  function play(i, k, keepName) {
+    if (!keepName) preset(i);
+    var x = SC[curSc];
+    rowSt(0, ''); rowSt(1, ''); rowSt(2, '');
+    $('d0').textContent = 'Хүлээж байна…'; $('d1').textContent = 'Шалгаж байна…';
+    $('rs').className = 'rs'; acctL.classList.remove('bad');
+    return sleep(500, k)
+      .then(function () { rowSt(0, 'on'); return sleep(750, k); })
+      .then(function () { $('d0').textContent = 'Сүүлийн 7 хоногийнх'; rowSt(0, 'ok'); return sleep(200, k); })
+      .then(function () { rowSt(1, 'on'); return sleep(1100, k); })
+      .then(function () { $('d1').textContent = 'Лавлагаа жинхэнэ'; rowSt(1, 'ok'); return sleep(200, k); })
+      .then(function () { rowSt(2, 'on'); return sleep(1100, k); })
+      .then(function () { var ok = matches(x); rowSt(2, ok ? 'ok' : 'no'); return sleep(300, k).then(function () { result(ok); }); });
+  }
+  function demoAuto() {
+    var k = ++demoTok;
+    play(0, k).then(function () { return sleep(3800, k); }).then(function () { return play(1, k); }).catch(function () {});
+  }
+  tabs.forEach(function (b) {
+    b.addEventListener('click', function () { var k = ++demoTok; play(+b.getAttribute('data-sc'), k).catch(function () {}); });
+  });
+  function runCustom() { var k = ++demoTok; play(curSc, k, true).catch(function () {}); }
+  $('ph-go').addEventListener('click', runCustom);
+  acct.addEventListener('keydown', function (e) { e.stopPropagation(); if (e.key === 'Enter') { e.preventDefault(); runCustom(); acct.blur(); } });
+  acct.addEventListener('focus', function () { demoTok++; });
+  demoShow(0);
+
+  /* guilloche rosettes */
+  var BANDS = [[112, 20, 7, 9, '143,166,255', .32, 1], [196, 26, 10, 10, '143,166,255', .25, -1], [288, 30, 13, 12, '143,166,255', .2, 1], [380, 16, 22, 8, '242,238,227', .12, -1], [436, 6, 48, 3, '143,166,255', .16, 1]];
+  var cans = all('canvas.guilloche').map(function (cv) {
+    return { cv: cv, g: cv.getContext('2d'), cx: +cv.getAttribute('data-cx'), cy: +cv.getAttribute('data-cy'), dw: +cv.getAttribute('data-dw'), slide: cv.closest('.slide') };
+  });
+  function paintG(G, ts) {
+    var cv = G.cv, g = G.g, W = cv.clientWidth, Hh = cv.clientHeight;
+    if (!W || !Hh) return;
+    var dpr = Math.min(2, window.devicePixelRatio || 1), bw = Math.round(W * dpr), bh = Math.round(Hh * dpr);
+    if (cv.width !== bw || cv.height !== bh) { cv.width = bw; cv.height = bh; }
+    g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, W, Hh);
+    var nar = narrow(), sc = nar ? Math.min(W, Hh) / 980 : W / G.dw, cx = nar ? W * 0.72 : W * G.cx, cy = nar ? Hh * 0.38 : Hh * G.cy, s = ts / 1000, TAU = Math.PI * 2;
+    for (var b = 0; b < BANDS.length; b++) {
+      var B = BANDS[b], R = B[0] * sc, A = B[1] * sc * (1 + .07 * Math.sin(s * .4 + b)), n = B[2], k = B[3], ph0 = B[6] * s * .22;
+      g.strokeStyle = 'rgba(' + B[4] + ',' + B[5] + ')'; g.lineWidth = 1.1;
+      for (var j = 0; j < k; j++) {
+        var ph = TAU * j / k + ph0;
+        g.beginPath();
+        for (var q = 0; q <= 720; q++) {
+          var an = TAU * q / 720, r = R + A * Math.sin(n * an + ph), x = cx + r * Math.cos(an), y = cy + r * Math.sin(an);
+          if (q) g.lineTo(x, y); else g.moveTo(x, y);
+        }
+        g.stroke();
+      }
+    }
+  }
+
+  /* pointer parallax tilt + render loop */
+  var tx = 0, ty = 0, tcx = 0, tcy = 0, lastMove = 0, lastG = -1e9, tiltOn = false;
+  var layers = all('.z').map(function (el) { return { el: el, z: parseFloat(el.style.getPropertyValue('--z')) || 0 }; });
+  function parallax(on) {
+    var u = U();
+    layers.forEach(function (o) { o.el.style.transform = on ? 'translate(' + (tcx * o.z * 1.2 * u) + 'px,' + (tcy * o.z * 0.9 * u) + 'px)' : ''; });
+  }
+  var laser = $('laser');
+  D.addEventListener('pointermove', function (e) {
+    wake();
+    if (H.classList.contains('laser-on')) laser.style.transform = 'translate(' + e.clientX + 'px,' + e.clientY + 'px)';
+    if (narrow() || ov || reduce() || e.pointerType !== 'mouse') return;
+    tx = e.clientX / window.innerWidth - .5; ty = e.clientY / window.innerHeight - .5; lastMove = performance.now();
+  });
+  D.addEventListener('mouseleave', function () { tx = 0; ty = 0; });
+  function frame(ts) {
+    requestAnimationFrame(frame);
+    if (!narrow() && !ov) {
+      if (ts - lastMove > 1600) { tx *= .9; ty *= .9; }
+      tcx += (tx - tcx) * .07; tcy += (ty - tcy) * .07;
+      if (Math.abs(tcx) + Math.abs(tcy) > .002) { tilt.style.transform = 'rotateY(' + (tcx * 8) + 'deg) rotateX(' + (-tcy * 6) + 'deg)'; parallax(true); tiltOn = true; }
+      else if (tiltOn) { tilt.style.transform = ''; parallax(false); tiltOn = false; }
+    }
+    if (ov) {
+      ovPhi += (ovTarget - ovPhi) * .1;
+      stage.style.transform = stageRing(ovPhi);
+    }
+    if (ts - lastG > 40) {
+      lastG = ts;
+      cans.forEach(function (G) {
+        var vis = narrow() ? true : (ov || G.slide.classList.contains('on'));
+        if (vis) paintG(G, reduce() ? 0 : ts);
+      });
+    }
+  }
+  requestAnimationFrame(frame);
+
+  /* controls */
+  var idleT = 0;
+  function wake() {
+    hud.classList.remove('idle');
+    clearTimeout(idleT);
+    idleT = setTimeout(function () { if (!ov) hud.classList.add('idle'); }, 3200);
+  }
+  var tmOn = false, tmStart = 0, tmInt = 0, tm = $('timer');
+  function tick() {
+    var left = 300 - Math.floor((Date.now() - tmStart) / 1000), a = Math.abs(left);
+    tm.textContent = (left < 0 ? '−' : '') + Math.floor(a / 60) + ':' + pad2(a % 60);
+    tm.classList.toggle('late', left < 30);
+  }
+  function toggleTimer() {
+    tmOn = !tmOn; tm.hidden = !tmOn; $('b-tm').classList.toggle('is-on', tmOn);
+    clearInterval(tmInt);
+    if (tmOn) { tmStart = Date.now(); tick(); tmInt = setInterval(tick, 250); }
+  }
+  function toggleLaser() { var on = !H.classList.contains('laser-on'); H.classList.toggle('laser-on', on); $('b-ls').classList.toggle('is-on', on); }
+  function toggleFS() {
+    try {
+      if (!D.fullscreenElement) { var p = H.requestFullscreen && H.requestFullscreen(); if (p && p.catch) p.catch(function () {}); }
+      else if (D.exitFullscreen) { var q = D.exitFullscreen(); if (q && q.catch) q.catch(function () {}); }
+    } catch (e) {}
+  }
+  var lockAsked = false;
+  function askLock() {
+    if (lockAsked) return; lockAsked = true;
+    try { if (navigator.wakeLock) navigator.wakeLock.request('screen').catch(function () {}); } catch (e) {}
+  }
+  $('b-prev').addEventListener('click', function () { go(cur - 1); });
+  $('b-next').addEventListener('click', function () { go(cur + 1); });
+  $('b-ov').addEventListener('click', function () { if (ov) exitOverview(ovIdx); else enterOverview(); });
+  $('b-ls').addEventListener('click', toggleLaser);
+  $('b-tm').addEventListener('click', toggleTimer);
+  $('b-fs').addEventListener('click', toggleFS);
+  stage.addEventListener('click', function (e) {
+    if (!ov) return;
+    var s = e.target.closest ? e.target.closest('.slide') : null;
+    if (s) exitOverview(slides.indexOf(s));
+  });
+  D.addEventListener('keydown', function (e) {
+    if (e.altKey || e.ctrlKey || e.metaKey || narrow()) return;
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+    askLock(); wake();
+    var k = e.key, onCtl = tag === 'BUTTON' || tag === 'A';
+    if (ov) {
+      if (k === 'ArrowRight' || k === 'ArrowDown') { e.preventDefault(); ovStep(1); }
+      else if (k === 'ArrowLeft' || k === 'ArrowUp') { e.preventDefault(); ovStep(-1); }
+      else if (k === 'Enter' || k === ' ') { e.preventDefault(); exitOverview(ovIdx); }
+      else if (k === 'Escape' || k === 'o' || k === 'O') { e.preventDefault(); exitOverview(cur); }
+      return;
+    }
+    if (k === 'ArrowRight' || k === 'ArrowDown' || k === 'PageDown' || k === 'n' || k === 'N' || (k === ' ' && !onCtl) || (k === 'Enter' && !onCtl)) { e.preventDefault(); go(cur + 1); }
+    else if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'PageUp' || k === 'p' || k === 'P' || k === 'Backspace') { e.preventDefault(); go(cur - 1); }
+    else if (k === 'Home') { e.preventDefault(); go(0); }
+    else if (k === 'End') { e.preventDefault(); go(N - 1); }
+    else if (k === 'o' || k === 'O' || k === 'Escape') { enterOverview(); }
+    else if (k === 'f' || k === 'F') { toggleFS(); }
+    else if (k === 't' || k === 'T') { toggleTimer(); }
+    else if (k === 'l' || k === 'L') { toggleLaser(); }
+  });
+  var sx = null, sy = 0;
+  vp.addEventListener('pointerdown', function (e) { askLock(); if (e.pointerType === 'mouse' || narrow()) return; sx = e.clientX; sy = e.clientY; });
+  vp.addEventListener('pointerup', function (e) {
+    if (sx === null) return;
+    var dx = e.clientX - sx, dy = e.clientY - sy; sx = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.3) go(cur + (dx < 0 ? 1 : -1));
+  });
+
+  /* phones: run the demo when it scrolls into view */
+  if ('IntersectionObserver' in window) {
+    var seen = false;
+    new IntersectionObserver(function (es) {
+      es.forEach(function (en) { if (narrow() && en.isIntersecting && !seen) { seen = true; demoAuto(); } });
+    }, { threshold: .5 }).observe(D.querySelector('.phone-wrap'));
+  }
+  if (mqNarrow.addEventListener) mqNarrow.addEventListener('change', function () {
+    if (ov) exitOverview(cur);
+    tilt.style.transform = ''; tcx = tcy = tx = ty = 0; parallax(false); tiltOn = false;
+    setOn();
+  });
+
+  /* start */
+  var m = /^#s([1-8])$/.exec(location.hash || '');
+  if (m) cur = +m[1] - 1;
+  setOn();
+  if (!narrow()) { enter(slides[cur], 0); wake(); }
+})();
+</script>
+
+</body></html>
